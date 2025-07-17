@@ -8,51 +8,44 @@ import a_2 from "@/assets/img/home-01/award/award-2.png";
 import a_3 from "@/assets/img/home-01/award/award-3.png";
 import a_4 from "@/assets/img/home-01/award/award-4.png";
 import a_5 from "@/assets/img/home-01/award/award-5.png";
-import a_6 from "@/assets/img/home-01/award/award-6.png";
+
 import { Leaf } from "../svg";
 
 const award_data = [
   {
     id: 1,
     img: a_1,
-    subtitle: "x2",
-    title: "FWA, Site of the Day",
-    date: "Jun 24, 2024",
+    subtitle: "x1",
+    title: "Top Developers Award",
+    date: "2022",
   },
   {
     id: 2,
     img: a_2,
-    subtitle: "x3",
-    title: "Awwwards Interior Excellence",
-    date: "Nov 24, 2022",
+    subtitle: "x1",
+    title: "Service Sight Award",
+    date: "2023",
   },
   {
     id: 3,
     img: a_3,
     subtitle: "x1",
-    title: "Loki boundary pushing year in Review 2022",
-    date: "May 24, 2012",
+    title: "The Soapery",
+    date: "2022",
   },
   {
     id: 4,
     img: a_4,
     subtitle: "x1",
-    title: "The New Liko Tools Website is Live.",
-    date: "Sep 10, 2021",
+    title: "Top Digital Agency Award",
+    date: "2021",
   },
   {
     id: 5,
     img: a_5,
-    subtitle: "x2",
-    title: "Digital Agencies Worldwide",
-    date: "Jun 12, 2021",
-  },
-  {
-    id: 6,
-    img: a_6,
     subtitle: "x1",
-    title: "FWA, Site of the Day",
-    date: "Aug 18, 2022",
+    title: "Search Engine Land",
+    date: "2022",
   },
 ];
 
@@ -61,7 +54,7 @@ type IProps = {
   cls?: string;
   abStyle?: boolean;
 };
-const AwardOne = ({cls="pt-125 pb-125",abStyle=false}: IProps) => {
+const AwardOne = ({ cls = "pt-125 pb-125", abStyle = false }: IProps) => {
   const [activeThumb, setActiveThumb] = React.useState(1);
   return (
     <div className={`tp-award-area ${cls}`}>
@@ -79,7 +72,7 @@ const AwardOne = ({cls="pt-125 pb-125",abStyle=false}: IProps) => {
               <div className="ab-award-title-sm">
                 <span>
                   <Leaf />
-                  Our Awards
+                  Awards & Recognitions
                 </span>
               </div>
             )}
@@ -98,6 +91,9 @@ const AwardOne = ({cls="pt-125 pb-125",abStyle=false}: IProps) => {
                     className={`tp-award-list-thumb-${item.id}`}
                     src={item.img}
                     alt="list-thumb"
+                    width={200} // adjust as needed
+                    height={200} // adjust as needed
+                    style={{ objectFit: "contain" }}
                   />
                 ))}
               </div>

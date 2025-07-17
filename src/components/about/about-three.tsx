@@ -2,11 +2,10 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 // internal imports
-import shape from '@/assets/img/home-03/about/ab-shape-img.png';
-import { ArrowBg, RightArrowTwo,FirstBracket, FirstBracketTwo } from "../svg";
+import shape from "@/assets/img/home-03/about/ab-shape-img.png";
+import { ArrowBg, RightArrowTwo, FirstBracket, FirstBracketTwo } from "../svg";
 
 export default function AboutThree() {
-
   return (
     <div className="tp-about-3-area pt-120 pb-110">
       <div className="container">
@@ -25,10 +24,10 @@ export default function AboutThree() {
                 </span>
               </span>
               <h4 className="tp-section-title-90 tp_text_invert tp_fade_bottom">
-                We tell visual stories through smooth motions{" "}
+                Bringing Ideas to Life with Design, Code & Motion{" "}
                 <span>
                   {" "}
-                  <br />& fluid Website
+                  <br />
                 </span>
               </h4>
             </div>
@@ -43,14 +42,14 @@ export default function AboutThree() {
           <div className="col-xl-6 col-lg-6 col-md-8">
             <div className="tp-about-3-content">
               <p className="mb-30 tp_fade_bottom">
-                We are a creative design studio based in London. We specialize
-                in Branding, and Web experiences for beauty.
+                Codebrit is a creative digital agency crafting bold brands and
+                seamless web experiences — from London to the world.
               </p>
               <p className="mb-45 tp_fade_bottom">
-                we’re all about digital experiences. The most creative idea and
-                the most perfect execution mean nothing.
+                At Codebrit, great ideas meet pixel-perfect execution to deliver
+                impact, not just aesthetics.
               </p>
-              <Link className="tp-btn-black-2 tp_fade_bottom" href="/about-us">
+              <Link className="tp-btn-black-2 tp_fade_bottom" href="/">
                 About Us
                 <span className="p-relative">
                   <RightArrowTwo />

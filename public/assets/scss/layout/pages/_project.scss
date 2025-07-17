@@ -514,13 +514,18 @@
     padding-bottom: 40px;
 }
 .tp_img_reveal {
-	visibility: hidden;
-	overflow: hidden;
+  overflow: hidden;
+  display: inline-block;
 }
 .tp_img_reveal img {
-	transform-origin: left;
-    overflow: hidden;
+  display: block;
 }
+
+
+
+
+
+
 .tp-project-4 {
     &-area{
         @media #{$xs}{
@@ -1997,6 +2002,7 @@
 .pw-project-style{
     & .tp-project-3-title-sm {
         color: var(--tp-common-black);
+        
     }
     & .tp-project-3-meta {
         color: var(--tp-common-black);

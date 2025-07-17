@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useIsotop } from "@/hooks/use-isotop";
 
-// images
 import p_m_1 from "@/assets/img/inner-project/masonary/masonary-1.jpg";
 import p_m_2 from "@/assets/img/inner-project/masonary/masonary-2.jpg";
 import p_m_3 from "@/assets/img/inner-project/masonary/masonary-3.jpg";
@@ -12,43 +11,36 @@ import p_m_5 from "@/assets/img/inner-project/masonary/masonary-5.jpg";
 import p_m_6 from "@/assets/img/inner-project/masonary/masonary-6.jpg";
 import { UpArrow } from "../svg";
 
-// data
 const portfolio_masonry_data = [
   {
     id: 1,
-    title: "D&T ASSOCIATION",
-    subtitle: "Creative",
+    title: "Fitness App",
+    subtitle: "UI/UX",
     img: p_m_1,
   },
   {
     id: 2,
-    title: "D&T ASSOCIATION",
-    subtitle: "Creative",
+    title: "Ecommerce Marketplace",
+    subtitle: "Mobile APP",
     img: p_m_2,
   },
   {
     id: 3,
-    title: "D&T ASSOCIATION",
-    subtitle: "Creative",
+    title: "Fire Fit",
+    subtitle: "Mobile APP",
     img: p_m_3,
   },
   {
     id: 4,
-    title: "D&T ASSOCIATION",
-    subtitle: "Creative",
+    title: "Healthy Lifestyle",
+    subtitle: "Branding",
     img: p_m_4,
   },
   {
     id: 5,
-    title: "D&T ASSOCIATION",
+    title: "Fina Construction ",
     subtitle: "Creative",
     img: p_m_5,
-  },
-  {
-    id: 6,
-    title: "D&T ASSOCIATION",
-    subtitle: "Creative",
-    img: p_m_6,
   },
 ];
 export default function PortfolioMasonryArea() {
@@ -57,7 +49,7 @@ export default function PortfolioMasonryArea() {
   useEffect(() => {
     initIsotop();
   }, [initIsotop]);
-  
+
   return (
     <div className="pm-project-masonary-area">
       <div className="container container-1800">
@@ -72,7 +64,7 @@ export default function PortfolioMasonryArea() {
                   <Image
                     src={item.img}
                     alt="masonry-img"
-                    style={{ height: "auto" }}
+                    style={{ height: "400px", width: "600px" }}
                   />
                 </div>
                 <div className="pm-project-masonary-content">
@@ -80,7 +72,9 @@ export default function PortfolioMasonryArea() {
                     {item.subtitle}
                   </span>
                   <h4 className="pm-project-masonary-title">
-                    <Link href="/portfolio-details-comparison">{item.title}</Link>
+                    {/* <Link href="/portfolio-details-comparison"> */}
+                    {item.title}
+                    {/* </Link> */}
                   </h4>
                 </div>
               </div>
@@ -91,7 +85,7 @@ export default function PortfolioMasonryArea() {
           <div className="col-xl-12">
             <div className="tp-projct-5-2-btn-box mt-50 d-flex justify-content-center">
               <div className="tp-hover-btn-wrapper">
-                <Link
+                {/* <Link
                   className="tp-btn-circle style-2 tp-hover-btn-item tp-hover-btn"
                   href="/portfolio-grid-col-4"
                 >
@@ -104,7 +98,7 @@ export default function PortfolioMasonryArea() {
                     <UpArrow />
                   </span>
                   <i className="tp-btn-circle-dot"></i>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>

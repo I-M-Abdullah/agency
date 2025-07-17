@@ -11,11 +11,13 @@ export default function VideoThree() {
           muted={true}
           autoPlay={true}
           playsInline={true}
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "contain", // or "cover"
+          }}
         >
-          <source
-            src="https://html.hixstudio.net/videos/liko/liko-3.mp4"
-            type="video/mp4"
-          />
+          <source src="/assets/videos/Promotionalvideo.mp4" type="video/mp4" />
         </video>
       </div>
     </div>

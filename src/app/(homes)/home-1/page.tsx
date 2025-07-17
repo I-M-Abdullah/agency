@@ -1,16 +1,13 @@
 import React from "react";
 import { Metadata } from "next";
-import HomeMain from "@/pages/homes/home-1";
+import HomeFourMain from "@/pages/homes/home-1";
 
 export const metadata: Metadata = {
-  title: "Liko - Home Main",
+  title: "Codebrit | Creative Agency In UK",
 };
 
-
-const Home = () => {
-  return (
-    <HomeMain/>
-  );
+const HomePageFour = () => {
+  return <HomeFourMain />;
 };
 
-export default Home;
+export default HomePageFour;

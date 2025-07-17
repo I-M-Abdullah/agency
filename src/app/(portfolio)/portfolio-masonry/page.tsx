@@ -3,13 +3,11 @@ import { Metadata } from "next";
 import PortfolioMasonryMain from "@/pages/portfolio/portfolio-masonry-main";
 
 export const metadata: Metadata = {
-  title: "Liko - Portfolio Masonry page",
+  title: "Codebrit | Creative Agency In UK - Portfolio Masonry page",
 };
 
 const PortfolioMasonryPage = () => {
-  return (
-    <PortfolioMasonryMain/>
-  );
+  return <PortfolioMasonryMain />;
 };
 
 export default PortfolioMasonryPage;

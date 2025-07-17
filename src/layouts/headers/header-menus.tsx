@@ -3,7 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import menu_data from "@/data/menu-data";
 
-const imgStyle:CSSProperties = { width: "100%", height: "auto", objectFit: "cover" };
+const imgStyle: CSSProperties = {
+  width: "100%",
+  height: "auto",
+  objectFit: "cover",
+};
 const HeaderMenus = () => {
   return (
     <ul>
@@ -20,8 +24,13 @@ const HeaderMenus = () => {
                         <div className="homemenu-thumb-wrap mb-20">
                           <div className="homemenu-thumb fix">
                             <Link href={home_menu.link}>
-                              <Image src={home_menu.img} alt="home-img" width={251} height={235} 
-                              style={imgStyle}/>
+                              <Image
+                                src={home_menu.img}
+                                alt="home-img"
+                                width={251}
+                                height={235}
+                                style={imgStyle}
+                              />
                             </Link>
                           </div>
                         </div>
@@ -51,7 +60,7 @@ const HeaderMenus = () => {
                             <div className="tp-megamenu-list-wrap">
                               <ul>
                                 {menu.pages_mega_menu.first.submenus.map(
-                                  (psm,i) => (
+                                  (psm, i) => (
                                     <li key={i}>
                                       <Link href={psm.link}>{psm.title}</Link>
                                     </li>
@@ -69,7 +78,7 @@ const HeaderMenus = () => {
                             <div className="tp-megamenu-list-wrap">
                               <ul>
                                 {menu.pages_mega_menu.second.submenus.map(
-                                  (psm,i) => (
+                                  (psm, i) => (
                                     <li key={i}>
                                       <Link href={psm.link}>{psm.title}</Link>
                                     </li>
@@ -93,13 +102,6 @@ const HeaderMenus = () => {
                             height={371}
                             style={imgStyle}
                           />
-                        </div>
-                        <div className="tp-shop-banner-content">
-                          <h4 className="tp-shop-banner-title">Sale</h4>
-                          <span>20% Off all Shoes</span>
-                          <Link className="tp-shop-btn" href="/shop">
-                            Shop Now
-                          </Link>
                         </div>
                       </div>
                     </div>
@@ -174,12 +176,6 @@ const HeaderMenus = () => {
                             )
                           )}
                         </div>
-                      </div>
-                    </div>
-                    <div className="col-xxl-3 col-xl-3 d-none d-xxl-block">
-                      <div className="tp-megamenu-portfolio-text">
-                        <h4>60+</h4>
-                        <span>Pre-built demo home page</span>
                       </div>
                     </div>
                   </div>

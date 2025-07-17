@@ -26,7 +26,7 @@ export default function BrandFive() {
         <div className="row">
           <div className="col-xl-12">
             <div className="ab-brand-title-box mb-100">
-              <h4 className="ab-brand-title">Our clients</h4>
+              <h4 className="ab-brand-title">Our Partners</h4>
             </div>
           </div>
         </div>
@@ -36,11 +36,8 @@ export default function BrandFive() {
               <div className="swiper-container ab-brand-slide-active">
                 <Marquee speed={100} loop={0} className="ab-brand-slide-wrap">
                   {brand_images.map((b, i) => (
-                    <div
-                      key={i}
-                      className="ab-brand-item"
-                    >
-                      <Image src={b} alt="brand" />
+                    <div key={i} className="ab-brand-item">
+                      <Image src={b} alt="brand" height={80} width={250} />
                     </div>
                   ))}
                 </Marquee>
@@ -53,10 +50,9 @@ export default function BrandFive() {
             <div className="ab-brand-content tp_title_anim">
               <p>
                 We belive in creating partnerships based on honesty and true
-                connection. That is why some of the biggest companies stayed with
-                us for years.
+                connection. That is why some of the biggest companies stayed
+                with us for years.
               </p>
-              <span>More about us</span>
             </div>
           </div>
         </div>

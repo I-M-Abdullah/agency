@@ -17,9 +17,16 @@ import FunFactOne from "@/components/fun-fact/fun-fact-one";
 import BrandFive from "@/components/brand/brand-five";
 import AwardOne from "@/components/award/award-one";
 // animation
-import { charAnimation, fadeAnimation, titleAnimation } from "@/utils/title-animation";
+import {
+  charAnimation,
+  fadeAnimation,
+  titleAnimation,
+} from "@/utils/title-animation";
 import { hoverBtn } from "@/utils/hover-btn";
 import { teamMarqueAnim } from "@/utils/scroll-marque";
+import ConstructionBanner from "@/components/construction-banner";
+import HeaderFour from "@/layouts/headers/header-four";
+import FooterFour from "@/layouts/footers/footer-four";
 
 const AboutUsMain = () => {
   useScrollSmooth();
@@ -38,7 +45,8 @@ const AboutUsMain = () => {
   return (
     <Wrapper>
       {/* header area start */}
-      <HeaderEleven transparent={true} />
+      <ConstructionBanner />
+      <HeaderFour />
       {/* header area end */}
 
       <div id="smooth-wrapper">
@@ -51,10 +59,6 @@ const AboutUsMain = () => {
             {/* about area */}
             <AboutUsArea />
             {/* about area */}
-
-            {/* team area */}
-            <TeamOne spacing="" />
-            {/* team area */}
 
             {/* fun fact area */}
             <FunFactOne />
@@ -70,7 +74,7 @@ const AboutUsMain = () => {
           </main>
 
           {/* footer area */}
-          <FooterTwo topCls="" />
+          <FooterFour />
           {/* footer area */}
         </div>
       </div>

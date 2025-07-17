@@ -1,18 +1,14 @@
 import React from "react";
-import Link from "next/link";
+
 import { mobile_menu_data } from "@/data/menu-data";
 
 export default function MobileMenusTwo() {
   const [navTitle, setNavTitle] = React.useState<string>("");
 
-  //openMobileMenu
   const openMobileMenu = (menu: string) => {
-    if (navTitle === menu) {
-      setNavTitle("");
-    } else {
-      setNavTitle(menu);
-    }
+    setNavTitle(navTitle === menu ? "" : menu);
   };
+
   return (
     <nav className="tp-main-menu-content">
       <ul>
@@ -24,20 +20,9 @@ export default function MobileMenusTwo() {
                 className="dropdown-toggle-btn"
                 onClick={() => openMobileMenu(menu.title)}
               >
-                <i className="fa-light fa-plus"></i>
+                <i className="fa-light fa-angle-right"></i>
               </button>
             </a>
-            <ul
-              className="tp-submenu submenu"
-              style={{ display: navTitle === menu.title ? "block" : "none" }}
-            >
-              {menu.dropdown_menus &&
-                menu.dropdown_menus.map((dm, i) => (
-                  <li key={i}>
-                    <Link href={dm.link}>{dm.title}</Link>
-                  </li>
-                ))}
-            </ul>
           </li>
         ))}
       </ul>

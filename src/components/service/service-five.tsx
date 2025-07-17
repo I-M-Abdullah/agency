@@ -9,21 +9,39 @@ import s_3 from "@/assets/img/home-01/service/service-icon-3.png";
 const service_data = [
   {
     id: 1,
-    title: "Branding",
-    desc: "Branding is one of the most important ingredients for the success of any business.",
+    title: "App Development",
+    desc: "We build scalable and high-performance mobile applications tailored to your business goals, ensuring seamless user experiences across iOS and Android.",
     icon: s_2,
   },
   {
     id: 2,
-    title: "Website design",
-    desc: "The perfect cocktail should still look and taste perfect no matter the size of the glass you serve it in.",
+    title: "Web Development",
+    desc: "From responsive websites to custom web applications, we deliver modern, fast, and user-centric web solutions aligned with your brand and business strategy.",
     icon: s_1,
   },
   {
     id: 3,
-    title: "Marketing",
-    desc: "We take that same approach with the apps & websites we create. you go there because of the overall experience.",
+    title: "Digital Marketing",
+    desc: "Maximize your brand's visibility online through targeted digital campaigns, SEO strategies, and conversion-driven techniques that bring measurable results.",
     icon: s_3,
+  },
+  {
+    id: 4,
+    title: "UI/UX Designing",
+    desc: "Our creative designers craft intuitive, beautiful interfaces and experiences that captivate users and enhance engagement across digital platforms.",
+    icon: s_2,
+  },
+  {
+    id: 5,
+    title: "Branding",
+    desc: "We build strong brand identities through strategic storytelling, visual design, and consistency that communicates your value and drives recognition.",
+    icon: s_3,
+  },
+  {
+    id: 6,
+    title: "Hosting Solutions",
+    desc: "Reliable and secure hosting tailored for performance, with 99.9% uptime, fast loading, and full technical support for your business success.",
+    icon: s_1,
   },
 ];
 
@@ -71,7 +89,7 @@ export default function ServiceFive() {
           </div>
         </div>
         <div className="tp-service-5-wrap">
-          <ServiceItems/>
+          <ServiceItems />
         </div>
       </div>
     </div>
