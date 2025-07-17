@@ -20,6 +20,9 @@ import FooterTwo from "@/layouts/footers/footer-two";
 // animation
 import { charAnimation, fadeAnimation } from "@/utils/title-animation";
 import { servicePanel } from "@/utils/panel-animation";
+import ConstructionBanner from "@/components/construction-banner";
+import HeaderFour from "@/layouts/headers/header-four";
+import FooterFour from "@/layouts/footers/footer-four";
 
 const ServiceMain = () => {
   useScrollSmooth();
@@ -35,10 +38,11 @@ const ServiceMain = () => {
 
   return (
     <Wrapper>
-      {/* header area start */}
-      <HeaderEleven />
-      {/* header area end */}
+      <ConstructionBanner />
 
+      {/* header area start */}
+      <HeaderFour />
+      {/* header area end */}
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
@@ -54,7 +58,7 @@ const ServiceMain = () => {
                     <div className="tp-service-5-title-box mb-90">
                       <span className="ab-inner-subtitle mb-20">
                         <Leaf />
-                        Services
+                        Our Services
                       </span>
                       <h4 className="tp-service-5-title">
                         We strongly believe that only design reinforced by{" "}
@@ -78,15 +82,13 @@ const ServiceMain = () => {
             {/* brand area */}
             <div className="tp-brand-4-area pt-120 pb-120">
               <div className="container">
-                <div className="row gx-0">
-                  <BrandItems />
-                </div>
+                <div className="row gx-0">{/* <BrandItems /> */}</div>
               </div>
             </div>
             {/* brand area */}
 
             {/* line image slider  */}
-            <LineImgSlider />
+            {/* <LineImgSlider /> */}
             {/* line image slider  */}
 
             {/* big text */}
@@ -95,7 +97,7 @@ const ServiceMain = () => {
           </main>
 
           {/* footer area */}
-          <FooterTwo topCls="" />
+          <FooterFour />
           {/* footer area */}
         </div>
       </div>

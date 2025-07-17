@@ -10,32 +10,13 @@ const location_data = [
   {
     id: 1,
     img: location_1,
-    country: "France",
-    time: "12:00 pm GMT+2",
-    location_title: "Base Create",
-    address: "Base Creative, 43 Appleton <br /> Lane, 3287 Hamilton",
-    phone: "(+91) 76001726",
-    email: "Hello@contact.com",
-  },
-  {
-    id: 2,
-    img: location_2,
-    country: "Germany",
-    time: "11:00 pm GMT+2",
-    location_title: "Base Create",
-    address: "Base Creative, 43 Appleton <br /> Lane, 3287 Hamilton",
-    phone: "(+91) 76001726",
-    email: "Hello@contact.com",
-  },
-  {
-    id: 3,
-    img: location_3,
-    country: "New Zealand",
-    time: "10:00 pm GMT+2",
-    location_title: "Base Create",
-    address: "Base Creative, 43 Appleton <br /> Lane, 3287 Hamilton",
-    phone: "(+91) 76001726",
-    email: "Hello@contact.com",
+    country: "UK",
+    time: "9:00 AM – 5:30 PM",
+    working_days: "Monday – Friday",
+    location_title: "Codebrit Office",
+    address: "Unit 3A, Suite 5254 Hatton Garden, London EC1N 8DX",
+    phone: "+44 7441 916648",
+    email: "hello@codebrit.co.uk",
   },
 ];
 
@@ -50,7 +31,11 @@ const ContactLocation = () => {
                 <div className="col-xl-7">
                   <div className="cn-contact-left d-flex flex-wrap align-items-center">
                     <div className="cn-contact-info-thumb">
-                      <Image src={item.img} alt="image" style={{ height: "auto" }} />
+                      <Image
+                        src={item.img}
+                        alt="image"
+                        style={{ height: "auto" }}
+                      />
                     </div>
                     <div className="cn-contact-left-info">
                       <h4 className="cn-contact-left-title">{item.country}</h4>
@@ -58,6 +43,10 @@ const ContactLocation = () => {
                         <i className="fa-regular fa-clock"></i>
                         {item.time}
                       </span>
+                      <br />
+                      <small style={{ color: "#aaa" }}>
+                        {item.working_days}
+                      </small>
                     </div>
                   </div>
                 </div>

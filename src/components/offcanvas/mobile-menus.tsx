@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import menu_data from "@/data/menu-data";
-import shop_banner from '@/assets/img/menu/shop-menu/banner-1.jpg';
-import port_img from '@/assets/img/menu/portfolio-menu/portfolio.png';
+import shop_banner from "@/assets/img/menu/shop-menu/banner-1.jpg";
+import port_img from "@/assets/img/menu/portfolio-menu/portfolio.png";
 
 export default function MobileMenus() {
   const [navTitle, setNavTitle] = React.useState<string>("");
@@ -36,7 +36,12 @@ export default function MobileMenus() {
                 </button>
               </a>
               {menu.home_menus ? (
-                <div className="tp-submenu submenu tp-mega-menu" style={{ display: navTitle === menu.title ? "block" : "none"}}>
+                <div
+                  className="tp-submenu submenu tp-mega-menu"
+                  style={{
+                    display: navTitle === menu.title ? "block" : "none",
+                  }}
+                >
                   <div className="tp-menu-fullwidth">
                     <div className="tp-homemenu-wrapper">
                       <div className="row gx-25 row-cols-xl-6 row-cols-lg-2 row-cols-md-2 row-cols-1">
@@ -45,7 +50,13 @@ export default function MobileMenus() {
                             <div className="homemenu-thumb-wrap mb-20">
                               <div className="homemenu-thumb fix">
                                 <Link href={hm.link}>
-                                  <Image src={hm.img} alt={hm.title} width={512} height={480} style={{ height: "100%" }} />
+                                  <Image
+                                    src={hm.img}
+                                    alt={hm.title}
+                                    width={512}
+                                    height={480}
+                                    style={{ height: "100%" }}
+                                  />
                                 </Link>
                               </div>
                             </div>
@@ -61,7 +72,12 @@ export default function MobileMenus() {
                   </div>
                 </div>
               ) : menu.pages_mega_menu ? (
-                <div className="tp-submenu submenu tp-mega-menu" style={{ display: navTitle === menu.title ? "block" : "none"}}>
+                <div
+                  className="tp-submenu submenu tp-mega-menu"
+                  style={{
+                    display: navTitle === menu.title ? "block" : "none",
+                  }}
+                >
                   <div className="tp-megamenu-wrapper">
                     <div className="row gx-50">
                       <div className="col-xl-8">
@@ -113,7 +129,7 @@ export default function MobileMenus() {
                               <Image
                                 src={shop_banner}
                                 alt="shop-banner"
-                                style={{height:'auto'}}
+                                style={{ height: "auto" }}
                               />
                             </div>
                             <div className="tp-shop-banner-content">
@@ -133,14 +149,19 @@ export default function MobileMenus() {
                   </div>
                 </div>
               ) : menu.portfolio_mega_menus ? (
-                <div className="tp-submenu submenu tp-mega-menu" style={{ display: navTitle === menu.title ? "block" : "none"}}>
+                <div
+                  className="tp-submenu submenu tp-mega-menu"
+                  style={{
+                    display: navTitle === menu.title ? "block" : "none",
+                  }}
+                >
                   <div className="tp-menu-fullwidth">
                     <div className="tp-megamenu-portfolio p-relative">
                       <div className="tp-megamenu-portfolio-banner">
                         <Image
                           src={port_img}
                           alt="port-img"
-                          style={{height:'auto'}}
+                          style={{ height: "auto" }}
                         />
                       </div>
                       <div className="row gx-50">
@@ -199,18 +220,17 @@ export default function MobileMenus() {
                             </div>
                           </div>
                         </div>
-                        <div className="col-xxl-3 col-xl-3 d-none d-xxl-block">
-                          <div className="tp-megamenu-portfolio-text">
-                            <h4>60+</h4>
-                            <span>Pre-built demo home page</span>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               ) : menu.dropdown_menus ? (
-                <ul className="tp-submenu submenu" style={{ display: navTitle === menu.title ? "block" : "none"}}>
+                <ul
+                  className="tp-submenu submenu"
+                  style={{
+                    display: navTitle === menu.title ? "block" : "none",
+                  }}
+                >
                   {menu.dropdown_menus.map((mm, i) => (
                     <li key={i}>
                       <Link href={mm.link}>{mm.title}</Link>

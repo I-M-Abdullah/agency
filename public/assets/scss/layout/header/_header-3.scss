@@ -28,6 +28,7 @@
             .menu-bg{
                 position: absolute;
                 top: 0;
+                bottom: 0;
                 display: inline-block;
                 backdrop-filter: blur(8px);
                 background: rgba(46, 46, 46, 0.9); 
@@ -63,7 +64,7 @@
                     & > a{
                         font-size: 17px;
                         font-weight: 500;
-                        padding: 12px 0;
+                        padding: 3px 0px 20px 0px;
                         transition: .3s;
                         display: inline-block;
                         color: var(--tp-common-white);

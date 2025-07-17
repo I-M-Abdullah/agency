@@ -13,13 +13,15 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
 // internal imports
 import Wrapper from "@/layouts/wrapper";
-import HeaderEleven from "@/layouts/headers/header-eleven";
-import ProjectOne from "@/components/project/project-one";
+
 import { UpArrowThree } from "@/components/svg";
 import LineTextThree from "@/components/line-text/line-text-3";
-import FooterTwo from "@/layouts/footers/footer-two";
 // animation
 import { charAnimation, titleAnimation } from "@/utils/title-animation";
+import ConstructionBanner from "@/components/construction-banner";
+import HeaderFour from "@/layouts/headers/header-four";
+import FooterFour from "@/layouts/footers/footer-four";
+import PortfolioMasonryArea from "@/components/portfolio/portfolio-masonry-area";
 
 const PortfolioRandomMain = () => {
   useScrollSmooth();
@@ -56,10 +58,10 @@ const PortfolioRandomMain = () => {
       <div id="magic-cursor">
         <div id="ball"></div>
       </div>
-      {/* magic cursor end */}
+      <ConstructionBanner />
 
       {/* header area start */}
-      <HeaderEleven />
+      <HeaderFour />
       {/* header area end */}
 
       <div id="smooth-wrapper">
@@ -78,7 +80,9 @@ const PortfolioRandomMain = () => {
                   <div className="row">
                     <div className="col-xl-12">
                       <div className="tm-hero-content">
-                        <span className="tm-hero-subtitle">Liko Studio</span>
+                        <span className="tm-hero-subtitle">
+                          Codebrit | Creative Agency In the UK
+                        </span>
                         <h4 className="tm-hero-title tp-char-animation">
                           Our latest & great projects
                         </h4>
@@ -94,18 +98,15 @@ const PortfolioRandomMain = () => {
                   </div>
                 </div>
               </div>
-              {/* portfolio hero */}
 
               {/* portfolio area */}
-              <ProjectOne style_2={true} />
+              <PortfolioMasonryArea />
               {/* portfolio area */}
             </div>
 
             {/* line text */}
             <LineTextThree cls="tp-project-text-slide" data_2={true} />
-            {/* line text */}
 
-            {/* contact area */}
             <div className="rm-project-contact-area pb-120">
               <div className="container">
                 <div className="row justify-content-center">
@@ -119,7 +120,7 @@ const PortfolioRandomMain = () => {
                   <div className="col-xl-10">
                     <div className="rm-project-contact-wrap">
                       {contact_data.map((text, i) => (
-                        <a href="#" key={i}>
+                        <a href="/contact" key={i}>
                           <div className="rm-project-contact-item d-flex align-items-center justify-content-between">
                             <span>{text}</span>
                             <UpArrowThree />
@@ -135,7 +136,7 @@ const PortfolioRandomMain = () => {
           </main>
 
           {/* footer area */}
-          <FooterTwo topCls="" />
+          <FooterFour />
           {/* footer area */}
         </div>
       </div>

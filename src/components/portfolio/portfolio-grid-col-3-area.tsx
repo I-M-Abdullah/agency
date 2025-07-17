@@ -4,7 +4,6 @@ import Link from "next/link";
 import { UpArrow } from "../svg";
 import { useIsotop } from "@/hooks/use-isotop";
 
-
 // data
 const portfolio_data = [
   {
@@ -112,7 +111,7 @@ export default function PortfolioGridColThreeArea({ style_2 = false }: IProps) {
                   <span>SHOOTING</span>
                 </button>
                 <button data-filter=".cat4">
-                  <span>STUDIO</span>
+                  <span>AGENCY</span>
                 </button>
               </div>
             </div>
@@ -124,16 +123,19 @@ export default function PortfolioGridColThreeArea({ style_2 = false }: IProps) {
               key={item.id}
               className={`col-xl-4 col-lg-6 col-md-6 grid-item ${item.show}`}
             >
-              <div className="tp-project-5-2-thumb mb-30 p-relative not-hide-cursor" data-cursor="View<br>Demo">
+              <div
+                className="tp-project-5-2-thumb mb-30 p-relative not-hide-cursor"
+                data-cursor="View<br>Demo"
+              >
                 <Link href="/portfolio-details-1" className="cursor-hide">
-                    <Image
-                      className="anim-zoomin"
-                      src={item.img}
-                      alt="port-img"
-                      width={style_2 ? 573 : 486}
-                      height={style_2 ? 683 : 576}
-                      style={{ height: "100%" }}
-                    />
+                  <Image
+                    className="anim-zoomin"
+                    src={item.img}
+                    alt="port-img"
+                    width={style_2 ? 573 : 486}
+                    height={style_2 ? 683 : 576}
+                    style={{ height: "100%" }}
+                  />
                   <div className="tp-project-5-2-category tp_fade_anim">
                     <span>{item.category}</span>
                   </div>

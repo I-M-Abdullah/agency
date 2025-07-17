@@ -1,26 +1,22 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import shape from '@/assets/img/home-04/about/about-shape-2.png'
-import shape_2 from '@/assets/img/home-04/about/about-shape-1.png'
+import shape from "@/assets/img/home-04/about/about-shape-2.png";
+import shape_2 from "@/assets/img/home-04/about/about-shape-1.png";
 
 export default function AboutTwo() {
   return (
     <div className="tp-about-4-area pt-100 pb-110 p-relative">
       <div className="tp-about-4-shape-2">
-        <Image
-          className="tp-zoom-in-out"
-          src={shape}
-          alt="shape"
-        />
+        <Image className="tp-zoom-in-out" src={shape} alt="shape" />
       </div>
       <div className="container">
         <div className="row">
           <div className="col-xl-10 col-md-10">
             <div className="tp-about-4-title-box tp_fade_bottom">
               <h4 className="tp-about-4-title">
-                Find out more about the team behind the best and fastest Liko
-                minimal portfolio HTML Template
+                Find out more about the team behind the best and fastest
+                Codebrit | Creative Agency In UK minimal portfolio HTML Template
               </h4>
             </div>
           </div>

@@ -27,13 +27,6 @@ export default function AboutUsArea() {
             <div className="col-xl-6 col-lg-6 col-md-6">
               <div className="ab-about-right-thumb p-relative">
                 <Image
-                  data-speed="1.1"
-                  className="inner-img z-index-5"
-                  src={ab_2}
-                  alt="about-img"
-                  style={{ height: "auto" }}
-                />
-                <Image
                   data-speed="0.9"
                   src={ab_3}
                   alt="about-img"
@@ -51,10 +44,9 @@ export default function AboutUsArea() {
                 Hi!
               </span>
               <p className="tp-dropcap tp_fade_bottom">
-                We are a creative studio that specializes in providing
-                high-quality design and branding solutions to businesses and
-                individuals. Our team is composed of talented designers,
-                developers, and marketers.!
+                We are a creative agency delivering top-quality design and
+                branding solutions. Our expert designers, developers, and
+                marketers bring your vision to life.
               </p>
             </div>
           </div>
@@ -65,8 +57,10 @@ export default function AboutUsArea() {
               <div className="col-xl-5 col-lg-5 col-md-4 mb-40">
                 <div className="ab-about-category-title-box p-relative">
                   <h4 className="ab-about-category-title">
-                    Something <br />
-                    <span>WHAT I DO</span>
+                    <span>
+                      WHAT WE DO
+                      <br />
+                    </span>
                   </h4>
                   <Image
                     className="ab-about-shape-1 d-none d-md-block"
@@ -80,18 +74,18 @@ export default function AboutUsArea() {
                   <div className="col-xl-6 col-lg-6 col-md-6 mb-40">
                     <div className="ab-about-category-list category-space-1 tp_fade_bottom">
                       <ul>
-                        <li>Art direction</li>
+                        <li>App Development</li>
                         <li>Branding</li>
-                        <li>Content Production</li>
-                        <li>User Interface Design</li>
-                        <li>Animation</li>
+                        <li>Web Development</li>
+                        <li>Digital Marketing</li>
+                        <li>Creative Designing</li>
                       </ul>
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-6 col-md-6 mb-40">
                     <div className="ab-about-category-list category-space-2 tp_fade_bottom">
                       <ul>
-                        <li>Brand Identity</li>
+                        <li>Lead Generation</li>
                         <li>User Interface</li>
                         <li>User Experience</li>
                         <li>Responsive Design</li>

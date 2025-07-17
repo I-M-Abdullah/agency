@@ -43,10 +43,9 @@ const PortfolioMasonryMain = () => {
                 <div className="row">
                   <div className="col-xl-12">
                     <div className="tm-hero-content">
-                      <span className="tm-hero-subtitle">Liko Studio</span>
-                      <h4 className="tm-hero-title tp-char-animation">
-                        Masonry
-                      </h4>
+                      <span className="tm-hero-subtitle">
+                        Codebrit | Creative Agency In UK Studio
+                      </span>
                     </div>
                     <div className="tm-hero-text tp_title_anim">
                       <p>

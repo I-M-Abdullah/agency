@@ -13,8 +13,9 @@ import ProjectFour from "@/components/project/project-four";
 import BigText from "@/components/big-text";
 import FooterTwo from "@/layouts/footers/footer-two";
 // animation
-import { charAnimation,titleAnimation } from "@/utils/title-animation";
+import { charAnimation, titleAnimation } from "@/utils/title-animation";
 import { projectThreeAnimation } from "@/utils/project-anim";
+import HeaderFour from "@/layouts/headers/header-four";
 
 const PortfolioWrapperMain = () => {
   useScrollSmooth();
@@ -31,7 +32,7 @@ const PortfolioWrapperMain = () => {
   return (
     <Wrapper>
       {/* header area start */}
-      <HeaderEleven />
+      <HeaderFour />
       {/* header area end */}
 
       <div id="smooth-wrapper">
@@ -43,7 +44,9 @@ const PortfolioWrapperMain = () => {
                 <div className="row">
                   <div className="col-xl-12">
                     <div className="tm-hero-content">
-                      <span className="tm-hero-subtitle">Liko Studio</span>
+                      <span className="tm-hero-subtitle">
+                        Codebrit | Creative Agency In UK Studio
+                      </span>
                       <h4 className="tm-hero-title tp-char-animation">
                         Our latest & great projects
                       </h4>
@@ -62,7 +65,7 @@ const PortfolioWrapperMain = () => {
             {/* portfolio hero */}
 
             {/* portfolio area */}
-            <ProjectFour style_2={true}/>
+            <ProjectFour style_2={true} />
             {/* portfolio area */}
 
             {/* big text */}

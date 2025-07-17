@@ -4,16 +4,18 @@ import { ScrollDown } from "../svg";
 
 export default function AboutUsHero() {
   const scrollTo = () => {
-    scroller.scrollTo('about-info', {
+    scroller.scrollTo("about-info", {
       duration: 800,
       delay: 0,
-      smooth: 'easeInOutQuart',
+      smooth: "easeInOutQuart",
     });
   };
   return (
     <div
       className="ab-inner-hero-area ab-inner-hero-bg p-relative"
-      style={{backgroundImage: "url(/assets/img/inner-about/hero/hero-1.jpg)"}}
+      style={{
+        backgroundImage: "url(/assets/img/inner-about/hero/hero-1.jpg)",
+      }}
     >
       <div className="breadcurmb-site d-none">
         <h6>About Us</h6>
@@ -52,10 +54,12 @@ export default function AboutUsHero() {
               data-stagger="0.08"
             >
               <p>
-                Liko develops, designs & delivers websites & creative campaigns
-                that drive results,
+                Codebrit | Creative Agency In UK develops, designs & delivers
+                websites & creative campaigns that drive results,
               </p>
-               <a className="tp-btn-white-sm border-style" href="#">Our Story</a>
+              <a className="tp-btn-white-sm border-style" href="#">
+                Our Story
+              </a>
             </div>
           </div>
         </div>

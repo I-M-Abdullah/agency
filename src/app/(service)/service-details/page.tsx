@@ -3,13 +3,11 @@ import { Metadata } from "next";
 import ServiceDetailsMain from "@/pages/service/service-details";
 
 export const metadata: Metadata = {
-  title: "Liko - Service Details page",
+  title: "Codebrit | Creative Agency In UK - Service Details page",
 };
 
 const ServiceDetailsPage = () => {
-  return (
-    <ServiceDetailsMain/>
-  );
+  return <ServiceDetailsMain />;
 };
 
 export default ServiceDetailsPage;

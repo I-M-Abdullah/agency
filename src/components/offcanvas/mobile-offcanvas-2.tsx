@@ -6,15 +6,21 @@ import { CloseThree, CloseTwo } from "../svg";
 import Link from "next/link";
 import MobileMenusTwo from "./mobile-menus-2";
 
-// prop type
 type IProps = {
   openOffcanvas: boolean;
   setOpenOffcanvas: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-export default function MobileOffcanvasTwo({openOffcanvas,setOpenOffcanvas}:IProps) {
+export default function MobileOffcanvasTwo({
+  openOffcanvas,
+  setOpenOffcanvas,
+}: IProps) {
   return (
-    <div className={`tp-offcanvas-2-area p-relative ${openOffcanvas ? "opened" : ""}`}>
+    <div
+      className={`tp-offcanvas-2-area p-relative ${
+        openOffcanvas ? "opened" : ""
+      }`}
+    >
       <div className="tp-offcanvas-2-bg is-left left-box"></div>
       <div className="tp-offcanvas-2-bg is-right right-box d-none d-md-block"></div>
       <div className="tp-offcanvas-2-wrapper">
@@ -29,7 +35,10 @@ export default function MobileOffcanvasTwo({openOffcanvas,setOpenOffcanvas}:IPro
               </Link>
             </div>
             <div className="tp-offcanvas-2-close d-md-none text-end">
-              <button onClick={() => setOpenOffcanvas(false)} className="tp-offcanvas-2-close-btn tp-offcanvas-2-close-btn">
+              <button
+                onClick={() => setOpenOffcanvas(false)}
+                className="tp-offcanvas-2-close-btn tp-offcanvas-2-close-btn"
+              >
                 <span className="text">
                   <span>close</span>
                 </span>
@@ -42,12 +51,15 @@ export default function MobileOffcanvasTwo({openOffcanvas,setOpenOffcanvas}:IPro
             </div>
           </div>
           <div className="tp-main-menu-mobile menu-hover-active counter-row">
-            <MobileMenusTwo/>
+            <MobileMenusTwo />
           </div>
         </div>
         <div className="tp-offcanvas-2-right right-box d-none d-md-block p-relative">
           <div className="tp-offcanvas-2-close text-end">
-            <button onClick={() => setOpenOffcanvas(false)} className="tp-offcanvas-2-close-btn">
+            <button
+              onClick={() => setOpenOffcanvas(false)}
+              className="tp-offcanvas-2-close-btn"
+            >
               <span className="text">
                 <span>close</span>
               </span>
@@ -75,10 +87,18 @@ export default function MobileOffcanvasTwo({openOffcanvas,setOpenOffcanvas}:IPro
             </div>
             <div className="tpoffcanvas__social-link">
               <ul>
-                <li><a href="#">Dribbble</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Linkedin</a></li>
-                <li><a href="#">Behance</a></li>
+                <li>
+                  <a href="#">Dribbble</a>
+                </li>
+                <li>
+                  <a href="#">Instagram</a>
+                </li>
+                <li>
+                  <a href="#">Linkedin</a>
+                </li>
+                <li>
+                  <a href="#">Behance</a>
+                </li>
               </ul>
             </div>
           </div>

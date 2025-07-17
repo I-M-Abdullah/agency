@@ -10,21 +10,21 @@ const marquee_text = [
   "Have A Great Project ?",
 ];
 const marquee_text_2 = [
-  "See more",
-  "See more",
-  "See more",
-  "See more",
-  "See more",
-  "See more",
+  "Full Stack Digital Solutions",
+  "Web Development",
+  "Mobile App Development",
+  "UI/UX Design",
+  "Digital Marketing",
+  "Cloud & DevOps Services",
 ];
 
-// prop type 
+// prop type
 type IProps = {
   cls?: string;
-  data_2?:boolean;
+  data_2?: boolean;
 };
 
-export default function LineTextThree({cls="",data_2=false}:IProps) {
+export default function LineTextThree({ cls = "", data_2 = false }: IProps) {
   const textArray = data_2 ? marquee_text_2 : marquee_text;
   return (
     <div className={`tp-line-text-wrap tp-line-text-wrap-2 ${cls}`}>

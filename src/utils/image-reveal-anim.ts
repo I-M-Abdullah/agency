@@ -1,32 +1,30 @@
-import { gsap, Power2 } from "gsap";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 function imageRevealAnimation() {
-  const tp_img_reveal = document.querySelectorAll(".tp_img_reveal");
+  const targets = document.querySelectorAll<HTMLElement>(".tp_img_reveal img");
 
-	if(tp_img_reveal.length > 0) {
-    tp_img_reveal.forEach((img_reveal) => {
-      let image = img_reveal.querySelector("img");
-      let tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: img_reveal,
-          start: "top 70%",
-        }
-      });
-  
-      tl.set(img_reveal, { autoAlpha: 1 });
-      tl.from(img_reveal, 1.5, {
-        xPercent: -100,
-        ease: Power2.easeOut
-      });
-      tl.from(image, 1.5, {
-        xPercent: 100,
-        scale: 1.5,
-        delay: -1.5,
-        ease: Power2.easeOut
-      });
+  // Set initial transform scale
+  gsap.set(targets, {
+    scaleX: 0,
+    transformOrigin: "left center",
+    display: "block",
+  });
+
+  targets.forEach((img) => {
+    gsap.to(img, {
+      scaleX: 1,
+      duration: 1,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: img,
+        start: "top 80%",
+        toggleActions: "play none none none",
+      },
     });
-  }
-};
-
-export {
-  imageRevealAnimation,
+  });
 }
+
+export { imageRevealAnimation };
